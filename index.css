@@ -1,0 +1,46 @@
+.my3dspace{
+	perspective: 800px;
+	perspective-origin: 50% 50%;
+	overflow: hidden;
+}
+.pagegroup{
+	width: 400px;
+	height: 400px;
+	margin: 150px auto 0 auto;
+	position: relative;
+	transform-style: preserve-3d;
+}
+.page{
+	width: 360px;
+	height: 360px;
+	padding: 20px;
+	color: white;
+	background-color: black;
+	font-size: 360px;
+	line-height: 360px;
+	font-weight: bold;
+	text-align: center;
+	position: absolute;
+}
+#op{
+	text-align: center;
+}
+.prev,.next{
+	margin-top: 20px;
+	display: inline-block;
+	padding: 35px;
+	font-size: 20px;
+	text-decoration: none;
+	color: green;
+	cursor:pointer;
+	font-weight: bold;
+}
+#page1{
+	transform-origin: bottom;
+	transition: transform 1s linear;
+}
+#page2,#page3,#page4,#page5,#page6{
+	transform-origin: bottom;
+	transition: transform 1s linear;
+	transform: rotateX(90deg);
+}
